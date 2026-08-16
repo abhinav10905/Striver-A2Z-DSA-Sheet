@@ -1,0 +1,32 @@
+**QUESTION**
+2149. Rearrange Array Elements by Sign
+You are given a 0-indexed integer array nums of even length consisting of an equal number of positive and negative integers.
+You should return the array of nums such that the array follows the given conditions:
+Every consecutive pair of integers have opposite signs.
+For all integers with the same sign, the order in which they were present in nums is preserved.
+The rearranged array begins with a positive integer.
+Return the modified array after rearranging the elements to satisfy the aforementioned conditions.
+
+**CONSTRAINTS**
+2 <= nums.length <= 2 * 105
+nums.length is even
+1 <= |nums[i]| <= 105
+nums consists of equal number of positive and negative integers.
+It is not required to do the modifications in-place.
+
+**CODE**
+class Solution:
+    def rearrangeArray(self, nums: List[int]) -> List[int]:
+        n=len(nums)
+        hash=[0]*n
+        i=0
+        j=1
+        for z in nums:
+            if z<0:
+                hash[j]=z
+                j+=2
+            else:
+                hash[i]=z
+                i+=2
+        return hash
+        
