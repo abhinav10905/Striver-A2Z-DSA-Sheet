@@ -23,3 +23,8 @@ class Solution:
             else:
                 count-=1
         return a
+
+**ABOUT MY CODE**
+Time:- O(n)
+Space:- O(1)
+Approach:- Boyer-Moore Voting Algorithm
