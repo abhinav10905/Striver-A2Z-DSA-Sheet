@@ -19,3 +19,8 @@ class Solution:
             sum=max(sum,a)
             m=min(m,b)
         return sum
+
+**ABOUT MY CODE**
+Time:- O(n)
+Space:- O(1)
+Approach:- Greedy
