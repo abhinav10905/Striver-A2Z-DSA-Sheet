@@ -1,0 +1,32 @@
+**QUESTION**
+1. Two Sum
+You are given an array of integers nums and an integer target, return indices of the two numbers such that they add up to target.
+You may assume that each input would have exactly one solution, and you may not use the same element twice.
+You can return the answer in any order.
+
+**CONSTRAINTS**
+2 <= nums.length <= 104
+-109 <= nums[i] <= 109
+-109 <= target <= 109
+Only one valid answer exists.
+
+**CODE**
+class Solution:
+    def twoSum(self, nums: List[int], target: int) -> List[int]:
+        
+        dict={}
+        z=0
+        a=target
+        for i in nums:
+            if (a-i) in dict:
+                c=[dict[(a-i)],z]
+                return c
+            dict[(i)]=z
+            z+=1
+        c=[-1,-1]
+        return c
+
+**ABOUT MY CODE**
+Time:- O(n)
+Space:- O(n)
+Approach:- Hash Map
