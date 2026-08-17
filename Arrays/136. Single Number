@@ -15,5 +15,8 @@ class Solution:
         for i in nums:
             a=a^i
         return a
-        
- 
+
+**ABOUT MY CODE**
+Time:- O(n)
+Space:- O(1)
+Approach:- XOR Approach
