@@ -19,4 +19,8 @@ class Solution:
                 j+=1
         return j
 
+**ABOUT MY CODE**
+Time:- O(n)
+Space:- O(1)
+Approach:- Two Pointers
         
