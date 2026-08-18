@@ -18,3 +18,8 @@ class Solution:
         nums[:a-k]=nums[:a-k][::-1]
         nums[a-k:]=nums[a-k:][::-1]
         nums[::]=nums[::-1]
+
+**ABOUT MY CODE**
+Time:- O(n)
+Space:- O(n)
+Approach:- Reversing
