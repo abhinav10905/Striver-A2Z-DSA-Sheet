@@ -29,4 +29,9 @@ class Solution:
                 hash[i]=z
                 i+=2
         return hash
+
+**ABOUT MY CODE**
+Time:- O(n)
+Space:- O(n)
+Approach:- Hash Map
         
