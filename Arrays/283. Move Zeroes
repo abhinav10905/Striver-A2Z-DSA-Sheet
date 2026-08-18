@@ -18,3 +18,8 @@ class Solution:
             if nums[i]!=0:
                 nums[i],nums[k]=nums[k],nums[i]
                 k+=1
+
+**ABOUT MY CODE**
+Time:- O(n)
+Space:- O(1)
+Approach:- Two Pointers, Swapping
