@@ -17,4 +17,9 @@ class Solution:
         for i in nums:
             b+=i
         return a-b
+
+**ABOUT MY CODE**
+Time:- O(n)
+Space:- O(1)
+Approach:- Math
         
