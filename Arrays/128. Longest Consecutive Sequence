@@ -30,4 +30,7 @@ class Solution:
             d=max(d,c)
             return d
 
-        
+**ABOUT MY CODE**
+Time:- O(n)
+Space:- O(n)
+Approach:- Sorting
