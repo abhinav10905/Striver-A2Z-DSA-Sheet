@@ -20,6 +20,6 @@ class Solution:
         nums.sort()
         
 **ABOUT MY CODE**
-Time:- O(nlogn)
+Time:- O(n)
 Space:- O(1)
 Approach:- Sorting
