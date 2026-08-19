@@ -20,3 +20,7 @@ class Solution:
             c=max(c,d)
         return c
             
+**ABOUT MY CODE**
+Time:- O(n)
+Space:- O(1)
+Approach:- Kadane's Algorithm
