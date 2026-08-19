@@ -20,3 +20,7 @@ class Solution:
         d=max(c,d)
         return d
         
+**ABOUT MY CODE**
+Time:- O(n)
+Space:- O(1)
+Approach:- Counting, Maximum Value
