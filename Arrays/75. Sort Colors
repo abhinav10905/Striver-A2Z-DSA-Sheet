@@ -19,3 +19,7 @@ class Solution:
         """
         nums.sort()
         
+**ABOUT MY CODE**
+Time:- O(nlogn)
+Space:- O(1)
+Approach:- Sorting
