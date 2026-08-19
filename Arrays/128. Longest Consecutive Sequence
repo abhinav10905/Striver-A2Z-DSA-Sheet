@@ -6,3 +6,28 @@ You must write an algorithm that runs in O(n) time.
 **CONSTRAINTS**
 0 <= nums.length <= 105
 -109 <= nums[i] <= 109
+
+**CODE**
+class Solution:
+    def longestConsecutive(self, nums: List[int]) -> int:
+        c=1
+        d=0
+        if nums==[]:
+            return 0
+        else:
+            num=nums[0]
+            nums=sorted(set(nums))
+            for i in nums:
+                if i==num:
+                    pass
+                elif i==num+1:
+                    num=i
+                    c+=1
+                else:
+                    d=max(d,c)
+                    c=1
+                    num=i
+            d=max(d,c)
+            return d
+
+        
