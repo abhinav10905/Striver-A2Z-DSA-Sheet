@@ -34,3 +34,8 @@ class Solution:
                 if row[i]==1 or column[j]==1:
                     matrix[i][j]=0
         
+
+**ABOUT MY CODE**
+Time:- O(n*m)
+Space:- O(n+m)
+Approach:- Array, Matrix
