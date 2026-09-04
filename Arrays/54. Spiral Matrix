@@ -32,3 +32,8 @@ class Solution:
                     spiral.append(matrix[l][left])
                 left+=1
         return spiral
+
+**ABOUT MY CODE**
+Time:- O(m*n)
+Space:- O(1)
+Approach:- Matrix
