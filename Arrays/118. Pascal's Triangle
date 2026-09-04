@@ -23,3 +23,7 @@ class Solution:
                 j+=1
             return a
         
+**ABOUT MY CODE**
+Time:- O(n**2)
+Space:- O(n**2)
+Approach:- DP, Array
