@@ -2,3 +2,27 @@
 560. Subarray Sum Equals K
 Given an array of integers nums and an integer k, return the total number of subarrays whose sum equals to k.
 A subarray is a contiguous non-empty sequence of elements within an array.
+
+**CONSTRAINTS**
+1 <= nums.length <= 2 * 104
+-1000 <= nums[i] <= 1000
+-107 <= k <= 107
+
+**CODE**
+class Solution:
+    def subarraySum(self, nums: List[int], k: int) -> int:
+        n=len(nums)
+        c=0
+        hash={}
+        hash[0]=1
+        sum=0
+        for i in nums:
+            sum+=i
+            if sum-k in hash:
+                c+=hash[sum-k]
+            if sum in hash:
+                hash[sum]+=1
+            else:
+                hash[sum]=1
+        return c
+
