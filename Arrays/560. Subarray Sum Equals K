@@ -26,3 +26,7 @@ class Solution:
                 hash[sum]=1
         return c
 
+**ABOUT MY CODE**
+Time:- O(n)
+Space:- O(n)
+Approach:- Hash Map, Math
