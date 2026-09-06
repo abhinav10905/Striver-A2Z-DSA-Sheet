@@ -5,7 +5,6 @@ Given an integer array of size n, find all elements that appear more than ⌊n /
 **CONSTRAINTS**
 1 <= nums.length <= 5 * 104
 -109 <= nums[i] <= 109
-Follow up: Could you solve the problem in linear time and in O(1) space?
 
 **CODE**
 class Solution:
@@ -24,4 +23,8 @@ class Solution:
             if hash[i]>ans:
                 c=c+[i]
         return c
-        
+
+**ABOUT MY CODE**
+Time:- O(n)
+Space:- O(n)
+Approach:- Hash Map
