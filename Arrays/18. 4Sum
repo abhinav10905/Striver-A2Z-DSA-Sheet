@@ -10,3 +10,30 @@ You may return the answer in any order.
 1 <= nums.length <= 200
 -109 <= nums[i] <= 109
 -109 <= target <= 109
+
+**CODE**
+class Solution:
+    def fourSum(self, nums: List[int], target: int) -> List[List[int]]:
+        a=[]
+        nums.sort()
+        n=len(nums)
+        for i in range (0,n):
+            if i>0 and nums[i]==nums[i-1]:
+                continue
+            for j in range (i+1,n):
+                if j>i+1 and nums[j]==nums[j-1]:
+                    continue
+                k=j+1
+                l=n-1
+                while k<l:
+                    z=nums[i]+nums[j]+nums[k]+nums[l]
+                    if z>target:
+                        l-=1
+                    elif z<target:
+                        k+=1
+                    else:
+                        a.append([nums[i],nums[j],nums[k],nums[l]])
+                        k+=1
+                        while nums[k]==nums[k-1] and k<l:
+                            k+=1
+        return a
