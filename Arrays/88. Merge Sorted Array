@@ -31,3 +31,8 @@ class Solution:
                 nums1[r]=nums1[i]
                 i-=1
             r-=1
+
+**ABOUT MY CODE**
+Time:- O(m+n)
+Space:- O(1)
+Approach:- Two Pointers, Array
