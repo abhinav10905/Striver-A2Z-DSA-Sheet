@@ -30,4 +30,8 @@ class Solution:
             if c==0:
                 a.append([b,i])
         return a
-        
+
+**ABOUT MY CODE**
+Time:- O(n*log(n))
+Space:- O(n)
+Approach:- Array, Sorting
