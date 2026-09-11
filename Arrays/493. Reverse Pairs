@@ -52,3 +52,8 @@ class Solution:
     def reversePairs(self, nums: List[int]) -> int:
         c=0
         return self.mergesort(nums,0,len(nums)-1,c)
+
+**ABOUT MY CODE**
+Time:- O(n*log(n))
+Space:- O(n)
+Approach:- Merge Sort, Array
