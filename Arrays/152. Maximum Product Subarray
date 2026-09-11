@@ -8,3 +8,16 @@ Note that the product of an array with a single element is the value of that ele
 1 <= nums.length <= 2 * 104
 -10 <= nums[i] <= 10
 The product of any subarray of nums is guaranteed to fit in a 32-bit integer.
+
+**CODE**
+class Solution:
+    def maxProduct(self, nums: List[int]) -> int:
+        a=max(nums)
+        i=j=1
+        for k in nums:
+            t=i*k
+            i=max(t,k,j*k)
+            j=min(t,k,j*k)
+            a=max(a,i)
+        return a
+        
