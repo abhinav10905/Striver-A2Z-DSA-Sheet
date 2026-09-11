@@ -21,3 +21,7 @@ class Solution:
             a=max(a,i)
         return a
         
+**ABOUT MY CODE**
+Time:- O(n)
+Space:- O(1)
+Approach:- Two Pointers, Array
