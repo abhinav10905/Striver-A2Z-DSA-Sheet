@@ -31,3 +31,7 @@ class Solution:
                 high-=1
         return ans
         
+**ABOUT MY CODE**
+Time:- O(logn)
+Space:- O(1)
+Approach:- Binary Search, Array
