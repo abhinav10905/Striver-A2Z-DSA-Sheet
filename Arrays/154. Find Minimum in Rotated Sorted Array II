@@ -12,3 +12,22 @@ n == nums.length
 1 <= n <= 5000
 -5000 <= nums[i] <= 5000
 nums is sorted and rotated between 1 and n times.
+
+**CODE**
+class Solution:
+    def findMin(self, nums: List[int]) -> int:
+        low=0
+        high=len(nums)-1
+        ans=nums[0]
+        while low<=high:
+            mid=(low+high)//2
+            if nums[mid]<ans:
+                ans=nums[mid]
+            if nums[mid]>nums[high]:
+                low=mid+1
+            elif nums[mid]<nums[high]:
+                high=mid-1
+            else:
+                high-=1
+        return ans
+        
