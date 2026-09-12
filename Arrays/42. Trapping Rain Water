@@ -26,3 +26,7 @@ class Solution:
                 c+=(r_max-height[j])
         return c
         
+**ABOUT MY CODE**
+Time:- O(n)
+Space:- O(1)
+Approach:- Two Pointers, Array
