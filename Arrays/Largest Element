@@ -1,3 +1,8 @@
 **QUESTION**
 Largest Element
 Given an array of integers nums, return the value of the largest element in the array
+
+**CONSTRAINTS**
+1 <= nums.length <= 105
+-104 <= nums[i] <= 104
+nums may contain duplicate elements.
