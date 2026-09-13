@@ -12,3 +12,7 @@ class Solution:
     def largestElement(self, nums):
         return max(nums)
         
+**ABOUT MY CODE**
+Time:- O(n)
+Space:- O(1)
+Approach:- Math, Array
