@@ -8,3 +8,26 @@ You must write an algorithm with O(log n) runtime complexity.
 -104 < nums[i], target < 104
 All the integers in nums are unique.
 nums is sorted in ascending order.
+
+**CODE**
+class Solution:
+    def ans(self,low,high,nums,target):
+        if low>high:
+            return -1
+        mid=(low+high)//2
+        if target<nums[mid]:
+            low=low
+            high=mid-1
+            return self.ans(low,high,nums,target)
+        elif target>nums[mid]:
+            low=mid+1
+            high=high
+            return self.ans(low,high,nums,target)
+        else:
+            return mid
+    def search(self, nums: List[int], target: int) -> int:
+        low=0
+        high=len(nums)-1
+        return self.ans(low,high,nums,target)
+
+        
