@@ -6,3 +6,9 @@ Given an array of integers nums, return the value of the largest element in the 
 1 <= nums.length <= 105
 -104 <= nums[i] <= 104
 nums may contain duplicate elements.
+
+**CODE**
+class Solution:
+    def largestElement(self, nums):
+        return max(nums)
+        
