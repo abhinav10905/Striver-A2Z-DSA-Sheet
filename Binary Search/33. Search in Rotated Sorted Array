@@ -11,3 +11,31 @@ You must write an algorithm with O(log n) runtime complexity.
 All values of nums are unique.
 nums is an ascending array that is possibly rotated.
 -104 <= target <= 104
+
+**CODE**
+class Solution:
+    def ans(self,low,high,nums,target):
+        if low>high:
+            return -1
+        mid=(low+high)//2
+        if nums[mid]==target:
+            return mid
+        elif nums[mid]>=nums[low]:
+            if target<nums[mid] and target>=nums[low]:
+                high=mid-1
+                return self.ans(low,high,nums,target)
+            else:
+                low=mid+1
+                return self.ans(low,high,nums,target)
+        else:
+            if target>nums[mid] and target<=nums[high]:
+                low=mid+1
+                return self.ans(low,high,nums,target)
+            else:
+                high=mid-1
+                return self.ans(low,high,nums,target)
+    def search(self, nums: List[int], target: int) -> int:
+        low=0
+        high=len(nums)-1
+        return self.ans(low,high,nums,target)
+        
