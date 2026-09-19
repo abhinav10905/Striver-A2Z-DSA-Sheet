@@ -35,4 +35,8 @@ class Solution:
         else:
             return False
 
+**ABOUT MY CODE**
+Time:- O(n)
+Space:- O(n)
+Approach:- String, ASCII
         
