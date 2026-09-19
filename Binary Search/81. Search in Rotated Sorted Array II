@@ -41,5 +41,9 @@ class Solution:
         low=0
         high=len(nums)-1
         return self.ans(low,high,nums,target)
-        
+
+**ABOUT MY CODE**
+Time:- O(logn)
+Space:- O(1)
+Approach:- Binary Search, Recursion
         
