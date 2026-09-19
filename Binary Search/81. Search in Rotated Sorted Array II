@@ -10,3 +10,36 @@ You must decrease the overall operation steps as much as possible.
 -104 <= nums[i] <= 104
 nums is guaranteed to be rotated at some pivot.
 -104 <= target <= 104
+
+**CODE**
+class Solution:
+    def ans(self,low,high,nums,target):
+        if low>high:
+            return False
+        mid=(low+high)//2
+        if nums[mid]==target:
+            return True
+        if nums[mid]==nums[low]==nums[high]:
+            low+=1
+            high-=1
+            return self.ans(low,high,nums,target)
+        elif nums[mid]>=nums[low]:
+            if target<nums[mid] and target>=nums[low]:
+                high=mid-1
+                return self.ans(low,high,nums,target)
+            else:
+                low=mid+1
+                return self.ans(low,high,nums,target)
+        else:
+            if target>nums[mid] and target<=nums[high]:
+                low=mid+1
+                return self.ans(low,high,nums,target)
+            else:
+                high=mid-1
+                return self.ans(low,high,nums,target)
+    def search(self, nums: List[int], target: int) -> bool:
+        low=0
+        high=len(nums)-1
+        return self.ans(low,high,nums,target)
+        
+        
