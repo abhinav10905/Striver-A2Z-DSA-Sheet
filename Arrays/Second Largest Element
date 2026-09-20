@@ -21,3 +21,8 @@ class Solution:
             elif nums[i]>b:
                 b=nums[i]
         return b
+
+**ABOUT MY CODE**
+Time:- O(n)
+Space:- O(1)
+Approach:- Math, Array
