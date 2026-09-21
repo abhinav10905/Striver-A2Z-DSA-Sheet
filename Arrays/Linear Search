@@ -19,3 +19,7 @@ class Solution:
             i+=1
         return a
     
+**ABOUT MY CODE**
+Time:- O(n)
+Space:- O(1)
+Approach:- Array
