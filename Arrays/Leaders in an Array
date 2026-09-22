@@ -6,3 +6,15 @@ A leader in an array is an element whose value is strictly greater than all elem
 **CONSTRAINTS**
 1 <= nums.length <= 105
 -104 <= nums[i] <= 104
+
+**CODE**
+class Solution:
+    def leaders(self, nums):
+        nums=nums[::-1]
+        a=[nums[0]]
+        m=nums[0]
+        for i in nums:
+            if i>m:
+                a.append(i)
+                m=i
+        return a[::-1]
