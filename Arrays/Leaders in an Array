@@ -18,3 +18,8 @@ class Solution:
                 a.append(i)
                 m=i
         return a[::-1]
+
+**ABOUT MY CODE**
+Time:- O(n)
+Space:- O(n)
+Approach:- Array, Reversing
