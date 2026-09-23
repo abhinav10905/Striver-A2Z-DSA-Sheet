@@ -20,4 +20,8 @@ class Solution:
             if i!=0:
                 a=a+" "
         return a
-        
+
+**ABOUT MY CODE**
+Time:- O(n)
+Space:- O(n)
+Approach:- String
