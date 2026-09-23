@@ -7,3 +7,16 @@ For example, if s = "abcde", then it will be "bcdea" after one shift.
 **CONSTRAINTS**
 1 <= s.length, goal.length <= 100
 s and goal consist of lowercase English letters.
+
+**CODE**
+class Solution:
+    def rotateString(self, s: str, goal: str) -> bool:
+        if len(s)!=len(goal):
+            return False
+        else:
+            s=s+s
+            if goal in s:
+                return True
+            else:
+                return False
+        
