@@ -10,3 +10,20 @@ Return s after removing the outermost parentheses of every primitive string in t
 1 <= s.length <= 105
 s[i] is either '(' or ')'.
 s is a valid parentheses string.
+
+**CODE**
+class Solution:
+    def removeOuterParentheses(self, s: str) -> str:
+        a=""
+        c=0
+        for i in s:
+            if i=="(":
+                c+=1
+                if c!=1:
+                    a=a+"("
+            else:
+                c-=1
+                if c!=0:
+                    a=a+")"
+        return a 
+        
