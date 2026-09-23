@@ -8,3 +8,22 @@ All occurrences of a character must be replaced with another character while pre
 1 <= s.length <= 5 * 104
 t.length == s.length
 s and t consist of any valid ascii character.
+
+**CODE**
+class Solution:
+    def isIsomorphic(self, s: str, t: str) -> bool:
+        hash1={s[0]:t[0]}
+        hash2={t[0]:s[0]}
+        for i in range (1,len(s)):
+            if s[i] in hash1:
+                if hash1[s[i]]!=t[i]:
+                    return False
+            else:
+                hash1[s[i]]=t[i]
+            if t[i] in hash2:
+                if hash2[t[i]]!=s[i]:
+                    return False
+            else:
+                hash2[t[i]]=s[i]
+        return True
+        
