@@ -27,3 +27,7 @@ class Solution:
                 hash2[t[i]]=s[i]
         return True
         
+**ABOUT MY CODE**
+Time:- O(n)
+Space:- O(n)
+Approach:- Hash Table
