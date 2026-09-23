@@ -9,3 +9,15 @@ Note that s may contain leading or trailing spaces or multiple spaces between tw
 1 <= s.length <= 104
 s contains English letters (upper-case and lower-case), digits, and spaces ' '.
 There is at least one word in s.
+
+**CODE**
+class Solution:
+    def reverseWords(self, s: str) -> str:
+        l=s.split()
+        a=""
+        for i in range (len(l)-1,-1,-1):
+            a=a+l[i]
+            if i!=0:
+                a=a+" "
+        return a
+        
