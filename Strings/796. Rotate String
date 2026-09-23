@@ -20,3 +20,7 @@ class Solution:
             else:
                 return False
         
+**ABOUT MY CODE**
+Time:- O(1)
+Space:- O(n)
+Approach:- String Concatination
