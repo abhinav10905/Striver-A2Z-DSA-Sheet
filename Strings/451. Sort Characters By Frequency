@@ -6,3 +6,25 @@ Return the sorted string. If there are multiple answers, return any of them.
 **CONSTRAINTS**
 1 <= s.length <= 5 * 105
 s consists of uppercase and lowercase English letters and digits.
+
+**CODE**
+class Solution:
+    def frequencySort(self, s: str) -> str:
+        hash={}
+        c=0
+        z=""
+        for i in s:
+            if i in hash:
+                hash[i]+=1
+                c=max(c,hash[i])
+            else:
+                hash[i]=1
+                c=max(c,1)
+        while True:
+            if c==0:
+                print(z)
+                break
+            
+
+        
+        
