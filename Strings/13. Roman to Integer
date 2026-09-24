@@ -87,5 +87,9 @@ class Solution(object):
                 i+=1
         return sum
 
+**ABOUT MY CODE**
+Time:- O(n)
+Space:- O(1)
+Approach:- String, Simulation
 
         
