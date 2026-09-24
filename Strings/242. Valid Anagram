@@ -5,3 +5,27 @@ Given two strings s and t, return true if t is an anagram of s, and false otherw
 **CONSTRAINTS**
 1 <= s.length, t.length <= 5 * 104
 s and t consist of lowercase English letters.
+
+**CODE**
+class Solution:
+    def isAnagram(self, s: str, t: str) -> bool:
+        hash={}
+        m="true"
+        for i in s:
+            if i in hash:
+                hash[i]+=1
+            else:
+                hash[i]=1
+        for i in t:
+            if i in hash and hash[i]!=0:
+                hash[i]-=1
+            else:
+                m="false"
+                break
+        if len(s)!=len(t):
+            m="false"
+        if m=="true":
+            return True
+        else:
+            return False
+        
