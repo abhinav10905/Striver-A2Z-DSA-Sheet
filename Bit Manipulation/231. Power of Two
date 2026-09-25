@@ -14,3 +14,7 @@ class Solution:
         else:
             return False
         
+**ABOUT MY CODE**
+Time:- O(1)
+Space:- O(1)
+Approach:- Bit Manipulation
