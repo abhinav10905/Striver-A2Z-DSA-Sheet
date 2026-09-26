@@ -8,4 +8,6 @@ You are given a parentheses string s. In one move, you can insert a parenthesis 
 For example, if s = "()))", you can insert an opening parenthesis to be "(()))" or a closing parenthesis to be "())))".
 Return the minimum number of moves required to make s valid.
 
- 
+**CONSTRAINTS**
+1 <= s.length <= 1000
+s[i] is either '(' or ')'.
