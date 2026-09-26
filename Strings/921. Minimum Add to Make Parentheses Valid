@@ -28,3 +28,7 @@ class Solution:
         c+=a
         return c
         
+**ABOUT MY CODE**
+Time:- O(n)
+Space:- O(1)
+Approach:- String  
