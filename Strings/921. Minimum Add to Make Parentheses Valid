@@ -11,3 +11,20 @@ Return the minimum number of moves required to make s valid.
 **CONSTRAINTS**
 1 <= s.length <= 1000
 s[i] is either '(' or ')'.
+
+**CODE**
+class Solution:
+    def minAddToMakeValid(self, s: str) -> int:
+        a=0
+        c=0
+        for i in s:
+            if i=="(":
+                a+=1
+            else:
+                a-=1
+                if a<0:
+                    c+=1
+                    a+=1
+        c+=a
+        return c
+        
