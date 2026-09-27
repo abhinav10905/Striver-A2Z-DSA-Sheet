@@ -23,4 +23,8 @@ class Solution:
             x*=x
             n//=2
         return a
-        
+
+**ABOUT MY CODE**
+Time:- O(logn)
+Space:- O(1)
+Approach:- Math
