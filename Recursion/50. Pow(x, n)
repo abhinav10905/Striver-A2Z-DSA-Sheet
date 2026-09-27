@@ -8,3 +8,19 @@ Implement pow(x, n), which calculates x raised to the power n (i.e., xn).
 n is an integer.
 Either x is not zero or n > 0.
 -104 <= xn <= 104
+
+**CODE**
+class Solution:
+    def myPow(self, x: float, n: int) -> float:
+        a=1
+        if n<0:
+            x=(1/x)
+            n=-n
+        while n>0:
+            if n%2==1:
+                a*=x
+                n-=1
+            x*=x
+            n//=2
+        return a
+        
