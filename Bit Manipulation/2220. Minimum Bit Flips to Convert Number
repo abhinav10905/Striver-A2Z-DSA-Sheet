@@ -6,3 +6,11 @@ Given two integers start and goal, return the minimum number of bit flips to con
 
 **CONSTRAINS**
 0 <= start, goal <= 109
+
+**CODE**
+class Solution:
+    def minBitFlips(self, start: int, goal: int) -> int:
+        a=start^goal
+        return bin(a).count("1")
+
+        
