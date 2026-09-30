@@ -11,3 +11,35 @@ bloomDay.length == n
 1 <= bloomDay[i] <= 109
 1 <= m <= 106
 1 <= k <= n
+
+**CODE**
+class Solution:
+    def time(self,bloomDay,m,k,t):
+        c=0
+        d=0
+        j=0
+        for i in range (0,len(bloomDay)):
+            if bloomDay[i]<=t:
+                c+=1
+            else:
+                c=0
+            if c==k:
+                d+=1
+                c=0
+        return d
+    def minDays(self, bloomDay: list[int], m: int, k: int) -> int:
+        if m*k>len(bloomDay):
+            return -1
+        low=1
+        high=max(bloomDay)
+        ans=0
+        while low<=high:
+            mid=(low+high)//2
+            z=self.time(bloomDay,m,k,mid)
+            if z>=m:
+                ans=mid
+                high=mid-1
+            else:
+                low=mid+1
+        return ans
+        
