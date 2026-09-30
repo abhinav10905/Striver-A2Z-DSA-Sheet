@@ -9,3 +9,23 @@ Return the minimum integer k such that she can eat all the bananas within h hour
 1 <= piles.length <= 104
 piles.length <= h <= 109
 1 <= piles[i] <= 109
+
+**CODE**
+class Solution:
+    def time(self,piles,t):
+        c=0
+        for i in range (0,len(piles)):
+            c+=ceil(piles[i]/t)
+        return c
+    def minEatingSpeed(self, piles: list[int], h: int) -> int:
+        low=1
+        high=max(piles)
+        while low<=high:
+            mid=(low+high)//2
+            z=self.time(piles,mid)
+            if z>h:
+                low=mid+1
+            else:
+                high=mid-1
+        return low
+        
