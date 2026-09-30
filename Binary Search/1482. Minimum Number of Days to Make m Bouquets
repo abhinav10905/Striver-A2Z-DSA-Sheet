@@ -42,4 +42,8 @@ class Solution:
             else:
                 low=mid+1
         return ans
-        
+
+**ABOUT MY CODE**
+Time:- O(n*log(max(bloomDay)))
+Space:- O(1)
+Approach:- Binary Search, Recursion
