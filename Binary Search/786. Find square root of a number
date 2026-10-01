@@ -24,3 +24,8 @@ class Solution:
             else:
                 high=mid-1
         return z
+
+**ABOUT MY CODE**
+Time:- O(log(n))
+Space:- O(1)
+Approach:- Binary Search, Recursion
