@@ -33,4 +33,7 @@ class Solution:
                 high=mid-1
         return ans
         
-        
+**ABOUT MY CODE**
+Time:- O(n*log(sum(weights)))
+Space:- O(1)
+Approach:- Binary Search, Recursion       
