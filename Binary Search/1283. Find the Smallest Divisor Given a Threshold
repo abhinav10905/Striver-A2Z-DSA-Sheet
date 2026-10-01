@@ -8,3 +8,28 @@ The test cases are generated so that there will be an answer.
 1 <= nums.length <= 5 * 104
 1 <= nums[i] <= 106
 nums.length <= threshold <= 106
+
+**CODE**
+class Solution:
+    def time(self,nums,t):
+        c=0
+        for i in range (0,len(nums)):
+            c+=ceil(nums[i]/t)
+        return c
+    def smallestDivisor(self, nums: list[int], threshold: int) -> int:
+        low=1
+        high=max(nums)
+        ans=0
+        while low<=high:
+            mid=(low+high)//2
+            z=self.time(nums,mid)
+            if z>threshold:
+                ans=mid
+                low=mid+1
+            elif z==threshold:
+                ans=mid
+                high=mid-1
+            else:
+                high=mid-1
+        return low
+        
