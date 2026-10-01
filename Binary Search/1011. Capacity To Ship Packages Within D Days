@@ -7,3 +7,30 @@ Return the least weight capacity of the ship that will result in all the package
 **CONSTRAINTS**
 1 <= days <= weights.length <= 5 * 104
 1 <= weights[i] <= 500
+
+**CODE**
+class Solution:
+    def time(self,weights,t):
+        c=1
+        d=0
+        for i in range (0,len(weights)):
+            d+=weights[i]
+            if d>t:
+                c+=1
+                d=weights[i]
+        return c
+    def shipWithinDays(self, weights: list[int], days: int) -> int:
+        low=max(weights)
+        high=sum(weights)
+        ans=-1
+        while low<=high:
+            mid=(low+high)//2
+            z=self.time(weights,mid)
+            if z>days:
+                low=mid+1
+            else:
+                ans=mid
+                high=mid-1
+        return ans
+        
+        
