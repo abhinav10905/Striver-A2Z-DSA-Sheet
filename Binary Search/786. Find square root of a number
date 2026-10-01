@@ -4,3 +4,23 @@ Given a positive integer n. Find and return its square root. If n is not a perfe
 
 **CONSTRAINTS**
  0 <= n <= 231 - 1
+
+**CODE**
+class Solution:
+    def ans(self,a):
+        return a**2
+    def floorSqrt(self, n: int) -> int:
+        low=0
+        high=n//2+1
+        z=-1
+        while low<=high:
+            mid=(low+high)//2
+            k=self.ans(mid)
+            if k<n:
+                z=mid
+                low=mid+1
+            elif k==n:
+                return mid
+            else:
+                high=mid-1
+        return z
