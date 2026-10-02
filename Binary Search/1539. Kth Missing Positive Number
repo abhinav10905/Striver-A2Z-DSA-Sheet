@@ -11,3 +11,20 @@ arr[i] < arr[j] for 1 <= i < j <= arr.length
 
 **FOLLOW UP**
 Could you solve this problem in less than O(n) complexity?
+
+**CODE**
+class Solution:
+    def ans(self,mid,arr):
+        a=arr[mid]-(mid+1)
+        return a
+    def findKthPositive(self, arr: list[int], k: int) -> int:
+        low=0
+        high=len(arr)-1
+        while low<=high:
+            mid=(low+high)//2
+            b=self.ans(mid,arr)
+            if b<k:
+                low=mid+1
+            else:
+                high=mid-1
+        return low+k
