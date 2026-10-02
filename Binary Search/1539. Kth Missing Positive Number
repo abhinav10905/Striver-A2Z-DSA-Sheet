@@ -28,3 +28,8 @@ class Solution:
             else:
                 high=mid-1
         return low+k
+
+**ABOUT MY CODE**
+Time:- O(log(len(arr))
+Space:- O(1)
+Approach:- Binary Search, Recursion
