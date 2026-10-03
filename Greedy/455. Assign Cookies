@@ -22,3 +22,8 @@ class Solution:
             else:
                 j+=1
         return i  
+
+**ABOUT MY CODE**
+Time:- O(nlog(n)+mlog(m))
+Space:- O(1)
+Approach:- Greedy
