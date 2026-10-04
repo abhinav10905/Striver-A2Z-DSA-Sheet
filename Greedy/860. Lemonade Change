@@ -33,4 +33,8 @@ class Solution:
                     a[0]-=1
                     a[1]-=1
         return True
-        
+
+**ABOUT MY CODE**
+Time:- O(n)
+Space:- O(1)
+Approach:- Greedy
