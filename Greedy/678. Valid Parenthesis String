@@ -10,3 +10,27 @@ Left parenthesis '(' must go before the corresponding right parenthesis ')'.
 **CONSTRAINTS**
 1 <= s.length <= 100
 s[i] is '(', ')' or '*'.
+
+**CODE**
+class Solution:
+    def checkValidString(self, s: str) -> bool:
+        a=0
+        b=0
+        for i in s:
+            if i=="(":
+                a+=1
+                b+=1
+            elif i==")":
+                a-=1
+                b-=1
+            else:
+                a+=1
+                b-=1
+            if a<0:
+                return False
+            b=max(0,b)
+        if b!=0:
+            return False
+        else:
+            return True
+        
