@@ -7,3 +7,30 @@ Given an integer array bills where bills[i] is the bill the ith customer pays, r
 **CONSTRAINTS**
 1 <= bills.length <= 105
 bills[i] is either 5, 10, or 20.
+
+**CODE**
+class Solution:
+    def lemonadeChange(self, bills: list[int]) -> bool:
+        a=[0,0,0]
+        for i in bills:
+            if i==5:
+                a[0]+=1
+            elif i==10:
+                a[1]+=1
+                if a[0]==0:
+                    return False
+                a[0]-=1
+            else:
+                a[2]+=1
+                if a[0]==0:
+                    return False
+                elif a[1]==0:
+                    if a[0]<=2:
+                        return False
+                    else:
+                        a[0]-=3
+                else:
+                    a[0]-=1
+                    a[1]-=1
+        return True
+        
