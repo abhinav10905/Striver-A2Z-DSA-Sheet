@@ -33,4 +33,8 @@ class Solution:
             return False
         else:
             return True
-        
+
+**ABOUT MY CODE**
+Time:- O(n)
+Space:- O(1)
+Approach:- Greedy
