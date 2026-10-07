@@ -28,6 +28,11 @@ class Solution:
         z=len(nums)
         y=self.ans(low,high,nums,x,z)
         return y
+
+**ABOUT MY CODE**
+Time:- O(log(n))
+Space:- O(1)
+Approach:- Binary Search, Recursion
        
 
 
