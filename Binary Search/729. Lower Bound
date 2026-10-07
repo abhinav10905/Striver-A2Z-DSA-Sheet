@@ -8,3 +8,26 @@ If no such index is found, return the size of the array.
  1 <= nums.length <= 105
 -105 < nums[i], x < 105
 nums is sorted in ascending order.
+
+**CODE**
+class Solution:
+    def ans(self,low,high,nums,target,z):
+        mid=(low+high)//2
+        if low>high:
+            return z
+        if nums[mid]>=target:
+            z=mid
+            high=mid-1
+            return self.ans(low,high,nums,target,z)
+        else:
+            low=mid+1
+            return self.ans(low,high,nums,target,z)
+    def lowerBound(self, nums, x):
+        low=0
+        high=len(nums)-1
+        z=len(nums)
+        y=self.ans(low,high,nums,x,z)
+        return y
+       
+
+
