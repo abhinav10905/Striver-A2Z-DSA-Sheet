@@ -1,1 +1,5 @@
-
+**QUESTION**
+750. Upper Bound
+Given a sorted array of nums and an integer x, write a program to find the upper bound of x.
+The upper bound of x is defined as the smallest index i such that nums[i] > x.
+If no such index is found, return the size of the array.
