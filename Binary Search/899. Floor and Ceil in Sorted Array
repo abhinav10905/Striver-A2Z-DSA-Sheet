@@ -6,3 +6,31 @@ Given a sorted array nums and an integer x. Find the floor and ceil of x in nums
 1 <= nums.length <= 105 
 0 < nums[i], x < 105 
 nums is sorted in ascending order.
+
+**CODE**
+class Solution:
+    def ans(self,low,high,nums,target,z):
+        mid=(low+high)//2
+        if low>high:
+            return z
+        if nums[mid]>=target:
+            z=mid
+            high=mid-1
+            return self.ans(low,high,nums,target,z)
+        else:
+            low=mid+1
+            return self.ans(low,high,nums,target,z)
+    def getFloorAndCeil(self, nums, x):
+        low=0
+        high=len(nums)-1
+        z=-1
+        y=self.ans(low,high,nums,x,z)
+        if y==-1:
+            return nums[-1],-1
+        if nums[y]==x:
+            return nums[y],nums[y]
+        if y==0:
+            return -1,nums[0]
+        return nums[y-1],nums[y]
+
+       
