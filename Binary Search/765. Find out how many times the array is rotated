@@ -28,3 +28,8 @@ class Solution:
         z=-1
         z=self.ans(nums,low,high)
         return z
+
+**ABOUT MY CODE**
+Time:- O(log(n))
+Space:- O(1)
+Approach:- Binary Search, Recursion
