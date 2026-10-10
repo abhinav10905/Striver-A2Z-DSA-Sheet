@@ -11,3 +11,34 @@ m == matrix.length
 n == matrix[i].length
 1 <= m, n <= 100
 -104 <= matrix[i][j], target <= 104
+
+**CODE**
+class Solution:
+    def searchMatrix(self, matrix: List[List[int]], target: int) -> bool:
+        m="false"
+        start=0
+        end=len(matrix)-1
+        while start<=end:
+            a=(start+end)//2
+            if target>matrix[a][-1]:
+                start=a+1
+            elif target<matrix[a][0]:
+                end=a-1
+            else:
+                low=0
+                high=len(matrix[a])
+                while low<=high:
+                    mid=(low+high)//2
+                    if matrix[a][mid]==target:
+                        m="true"
+                        break
+                    elif matrix[a][mid]<target:
+                        low=mid+1
+                    else:
+                        high=mid-1
+                break
+        if m=="true":
+            return True
+        else:
+            return False
+        
