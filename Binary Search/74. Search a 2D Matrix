@@ -41,4 +41,8 @@ class Solution:
             return True
         else:
             return False
-        
+
+**ABOUT MY CODE**
+Time:- O(log(n)+log(m))
+Space:- O(1)
+Approach:- Binary Search, Array
