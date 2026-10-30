@@ -35,3 +35,7 @@ class Solution:
                 low=mid+1
         return low
         
+**ABOUT MY CODE**
+Time:- O(n*log(sum(nums)-max(nums)))
+Space:- O(1)
+Approach:- Binary Search, Recursion
