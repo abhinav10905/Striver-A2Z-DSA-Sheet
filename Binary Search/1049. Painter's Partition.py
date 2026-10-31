@@ -5,3 +5,9 @@ Each painter paints only contiguous segments of boards.
 No board can be split between painters.
 The goal is to minimize the time to paint all boards.
 Return the minimum time required to paint all boards modulo 10000003.
+
+**CONSTRAINTS**
+1 <= A <= 1000
+1 <= B <= 106
+1 <= N <= 105
+1 <= C[i] <= 106
