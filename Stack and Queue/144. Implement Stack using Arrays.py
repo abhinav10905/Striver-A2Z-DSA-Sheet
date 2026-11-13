@@ -8,3 +8,24 @@ int pop(): Removes and returns the top element of the stack.
 int top(): Returns the top element of the stack without removing it.
 boolean isEmpty(): Returns true if the stack is empty, false otherwise.
 Please note that this section might seem a bit difficult without prior knowledge on what stacks is, we will soon try to add basics concepts for your ease! If you know the concepts already please go ahead to give a shot to the problem. Cheers!
+
+**CODE**
+class ArrayStack:
+    def __init__(self):
+        self.stack=[]
+    def push(self, x):
+        self.stack.append(x)
+    def pop(self):
+        if self.stack==[]:
+            return 0
+        else:
+            return self.stack.pop()
+    def top(self):
+        if self.stack==[]:
+            return 0
+        return self.stack[-1]
+    def isEmpty(self):
+        if self.stack==[]:
+            return True
+        else:
+            return False
