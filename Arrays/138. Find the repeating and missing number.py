@@ -24,3 +24,8 @@ class Solution:
             elif hash[i]==2:
                 a=i+1
         return [a,b]
+
+**ABOUT MY CODE**
+Time:- O(n)
+Space:- O(n)
+Approach:- Hash Map, Array
