@@ -27,5 +27,8 @@ class Solution:
                 d=len(i)-low
                 c=mat.index(i)
         return c
-            
-       
+
+**ABOUT MY CODE**
+Time:- O(n*logm)
+Space:- O(1)
+Approach:- Binary Search
