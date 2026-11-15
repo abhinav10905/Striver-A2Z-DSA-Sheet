@@ -22,3 +22,7 @@ class Solution:
                     return True
         return False
         
+**ABOUT MY CODE**
+Time:- O(n**2)
+Space:- O(1)
+Approach:- Linear Search
