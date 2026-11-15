@@ -12,3 +12,13 @@ n == matrix[i].length
 All the integers in each row are sorted in ascending order.
 All the integers in each column are sorted in ascending order.
 -109 <= target <= 109
+
+**CODE**
+class Solution:
+    def searchMatrix(self, matrix: List[List[int]], target: int) -> bool:
+        for i in matrix:
+            for j in i:
+                if j==target:
+                    return True
+        return False
+        
