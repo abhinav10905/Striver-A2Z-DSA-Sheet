@@ -7,3 +7,12 @@ A digit string is a string consisting of digits 0 through 9 that may contain lea
 
 **CONSRAINTS**
 1 <= n <= 1015
+
+**CODE**
+class Solution:
+    def countGoodNumbers(self, n: int) -> int:
+        e=(n+1)//2
+        o=n//2
+        return (pow(5,e,10**9+7)*pow(4,o,10**9+7))%(10**9+7)
+                 
+        
