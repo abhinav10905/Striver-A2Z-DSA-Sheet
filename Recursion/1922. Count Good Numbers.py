@@ -16,6 +16,6 @@ class Solution:
         return (pow(5,e,10**9+7)*pow(4,o,10**9+7))%(10**9+7)
                  
 **ABOUT MY CODE**
-Time:- O(n)
+Time:- O(logn)
 Space:- O(1)
 Approach:- Recursion
