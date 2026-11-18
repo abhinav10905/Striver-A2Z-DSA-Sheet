@@ -15,4 +15,7 @@ class Solution:
         o=n//2
         return (pow(5,e,10**9+7)*pow(4,o,10**9+7))%(10**9+7)
                  
-        
+**ABOUT MY CODE**
+Time:- O(n)
+Space:- O(1)
+Approach:- Recursion
