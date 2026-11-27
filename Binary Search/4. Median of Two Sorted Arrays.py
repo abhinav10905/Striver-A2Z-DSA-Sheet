@@ -35,3 +35,8 @@ class Solution:
             else:
                 lo = i + 1          
         return 0.0  
+
+**ABOUT MY CODE**
+Time:- O(log(m+n))
+Space:- O(1)
+Approach:- Binary Search
