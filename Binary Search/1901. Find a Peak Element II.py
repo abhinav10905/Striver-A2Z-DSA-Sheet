@@ -41,3 +41,8 @@ class Solution:
             else:
                 low=mid+1
         return [-1,-1]
+
+**ABOUT MY CODE**
+Time:- O(mlogn)
+Space:- O(1)
+Approach:- Binary Search
