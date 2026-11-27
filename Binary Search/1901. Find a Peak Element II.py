@@ -11,3 +11,33 @@ n == mat[i].length
 1 <= m, n <= 500
 1 <= mat[i][j] <= 105
 No two adjacent cells are equal.
+
+**CODE**
+class Solution:
+    def findPeakGrid(self, mat: list[list[int]]) -> list[int]:
+        m=len(mat)
+        n=len(mat[0])
+        low=0
+        high=n-1
+        while low<=high:
+            mid=(low+high)//2
+            r=0
+            for i in range (1,m):
+                if mat[i][mid]>mat[r][mid]:
+                    r=i
+            if mid!=0:
+                left=mat[r][mid-1]
+            else:
+                left=-1
+            cur=mat[r][mid]
+            if mid!=n-1:
+                right=mat[r][mid+1]
+            else:
+                right=-1
+            if left<cur and right<cur:
+                return [r,mid]
+            elif left>cur:
+                high=mid-1
+            else:
+                low=mid+1
+        return [-1,-1]
