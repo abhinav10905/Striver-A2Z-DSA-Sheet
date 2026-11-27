@@ -34,4 +34,7 @@ class Solution:
             z+=1
         return hash[k-1]
 
-          
+**ABOUT MY CODE**
+Time:- O(log(m+n))
+Space:- O(1)
+Approach:- Binary Search       
