@@ -35,6 +35,6 @@ class Solution:
         return hash[k-1]
 
 **ABOUT MY CODE**
-Time:- O(log(m+n))
+Time:- O(m+n)
 Space:- O(1)
-Approach:- Binary Search       
+Approach:- Linear Search       
